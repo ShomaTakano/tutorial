@@ -1,3 +1,11 @@
+import Logo from '/Users/takanoshoma/Desktop/tutorial/components/logo'
+import Nav from '/Users/takanoshoma/Desktop/tutorial/components/nav'
+
 export default function Header() {
-    return <header>HEADER</header>
+    return (
+        <header>
+            <Logo />
+            <Nav /> 
+        </header>
+    )
 }
