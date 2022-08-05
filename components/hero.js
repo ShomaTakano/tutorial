@@ -1,9 +1,11 @@
-export default function Hero({ title, subtitle, imageOn = false}) {
+import styles from '/Users/takanoshoma/Desktop/tutorial/styles/hero.module.css'
+export default function Hero({ title, subtitle, imageOn = false }) {
     return (
-        <div>
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
-        {imageOn && <figure> [画像] </figure>}
+        <div className={styles.textPastel}>
+        <h1 className={styles.title}>CUBE</h1>
+        <p className={styles.subtitle}>
+          アウトプットしていくサイト
+        </p>
       </div>
     )
 }
