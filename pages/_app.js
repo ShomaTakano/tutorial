@@ -1,3 +1,4 @@
+import '/Users/takanoshoma/Desktop/tutorial/styles/globals.css'
 import Layout from '/Users/takanoshoma/Desktop/tutorial/components/layout'
 
 function MyApp({ Component, pageProps }) {
