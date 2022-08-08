@@ -4,7 +4,7 @@ import Nav from '/Users/takanoshoma/Desktop/tutorial/components/nav'
 export default function Header() {
     return (
         <header>
-            <Logo />
+            <Logo boxOn />
             <Nav /> 
         </header>
     )
