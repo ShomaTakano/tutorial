@@ -1,0 +1,3 @@
+.flexContainer {
+    composes: spaceBetween from '/Users/takanoshoma/Desktop/tutorial/styles/utils.module.css'
+}
