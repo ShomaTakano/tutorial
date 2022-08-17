@@ -1,5 +1,6 @@
 import Container from '/Users/takanoshoma/Desktop/tutorial/components/container'
 import Logo from '/Users/takanoshoma/Desktop/tutorial/components/logo'
+import Social from '/Users/takanoshoma/Desktop/tutorial/components/social.js'
 import styles from '/Users/takanoshoma/Desktop/tutorial/styles/footer.module.css'
 export default function Footer() {
     return (
@@ -7,7 +8,7 @@ export default function Footer() {
             <Container>
                 <div className={styles.flexContainer}>
                     <Logo />
-                    [ソーシャル]
+                    <Social />
                 </div>
             </Container>
          </footer>
