@@ -1,3 +1,4 @@
+import Meta from '/Users/takanoshoma/Desktop/tutorial/components/meta.js'
 import Container from '/Users/takanoshoma/Desktop/tutorial/components/container'
 import Hero from '/Users/takanoshoma/Desktop/tutorial/components/hero'
 import PostBody from '/Users/takanoshoma/Desktop/tutorial/components/post-body.js'
@@ -9,6 +10,12 @@ import eyecatch from '/Users/takanoshoma/Desktop/tutorial/images/about.jpg'
 export default function About() {
   return (
     <Container>
+      <Meta pageTitle="アバウト" pageDesc="About development activities" 
+      pageImg={eyecatch.src}
+      pageImgW={eyecatch.width}
+      pageImgH={eyecatch.height}
+      />
+
       <Hero title="About" subtitle="About development activities" />
 
       <figure>
