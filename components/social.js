@@ -5,7 +5,7 @@ import {
     faTwitter,
     faFacebookF,
     faGithub,
-} from '/Users/takanoshoma/Desktop/tutorial/node_modules/@fortawesome/free-brands-svg-icons'
+} from 'node_modules/@fortawesome/free-brands-svg-icons'
 
 export default function Social({iconSize = 'initial' }) {
     return (

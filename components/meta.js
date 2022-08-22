@@ -2,12 +2,12 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 //サイトに関する情報
-import { siteMeta } from '/Users/takanoshoma/Desktop/tutorial/lib/constants.js'
+import { siteMeta } from 'lib/constants.js'
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } = siteMeta
 
 //汎用OGP画像
 
-import siteImg from '/Users/takanoshoma/Desktop/tutorial/images/ogp.jpg'
+import siteImg from 'images/ogp.jpg'
 
 export default function Meta({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH}) {
    //ページのタイトル
