@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { useRouter } from 'react'
+import { useRouter } from 'next/router'
 import '/Users/takanoshoma/Desktop/tutorial/styles/globals.css'
 import Layout from '/Users/takanoshoma/Desktop/tutorial/components/layout'
-import Script from 'next/script'
+import Script from '/Users/takanoshoma/Desktop/tutorial/node_modules/next/script.js'
 import * as gtag from '/Users/takanoshoma/Desktop/tutorial/lib/gtag.js'
 
 // Font Awesomeの設定
@@ -19,15 +19,15 @@ function MyApp({ Component, pageProps }) {
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
-      router.events.off('routeChangeComplete', handRouteChange)
+      router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
-  
+
   return (
   <>
   <Script
     strategy="afterInteractive"
-    src={`https://www.gogletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
+    src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
   />
   <Script
     id="gtag-init"
