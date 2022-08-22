@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import '/Users/takanoshoma/Desktop/tutorial/styles/globals.css'
-import Layout from '/Users/takanoshoma/Desktop/tutorial/components/layout'
-import Script from '/Users/takanoshoma/Desktop/tutorial/node_modules/next/script.js'
+import 'styles/globals.css'
+import Layout from '/Users/takanoshoma/Desktop/tutorial/components/layout.js'
+import Script from 'next/script'
 import * as gtag from '/Users/takanoshoma/Desktop/tutorial/lib/gtag.js'
 
 // Font Awesomeの設定
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
     strategy="afterInteractive"
     dangerouslySetInnerHTML={{
       __html: `
-      window.dateLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       
