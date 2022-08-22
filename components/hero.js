@@ -1,6 +1,6 @@
-import styles from '/Users/takanoshoma/Desktop/tutorial/styles/hero.module.css'
+import styles from 'styles/hero.module.css'
 import Image from 'next/image'
-import cube from '/Users/takanoshoma/Desktop/tutorial/images/cube.jpg'
+import cube from 'images/cube.jpg'
 
 export default function Hero({ title, subtitle, imageOn = false }) {
   return (

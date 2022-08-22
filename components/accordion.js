@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import styles from '/Users/takanoshoma/Desktop/tutorial/styles/accordion.module.css'
+import styles from 'styles/accordion.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronDown, faL } from '@fortawesome/free-solid-svg-icons'
 

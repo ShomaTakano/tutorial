@@ -1,4 +1,4 @@
-import styles from '/Users/takanoshoma/Desktop/tutorial/styles/tow-column.module.css'
+import styles from 'styles/tow-column.module.css'
 
 export function TwoColumn({ children }) {
     return (

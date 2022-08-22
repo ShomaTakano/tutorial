@@ -1,5 +1,5 @@
-import Header from '/Users/takanoshoma/Desktop/tutorial/components/header'
-import Footer from '/Users/takanoshoma/Desktop/tutorial/components/footer'
+import Header from 'components/header'
+import Footer from 'components/footer'
 
 export default function Layout({ children }) {
     return (

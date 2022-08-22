@@ -1,5 +1,5 @@
-import Social from '/Users/takanoshoma/Desktop/tutorial/components/social.js'
-import styles from '/Users/takanoshoma/Desktop/tutorial/styles/contact.module.css'
+import Social from 'components/social.js'
+import styles from 'styles/contact.module.css'
 
 export default function Contact() {
     return (

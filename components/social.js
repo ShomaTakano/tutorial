@@ -1,6 +1,6 @@
-import styles from '/Users/takanoshoma/Desktop/tutorial/styles/social.module.css'
+import styles from 'styles/social.module.css'
 
-import { FontAwesomeIcon } from '/Users/takanoshoma/Desktop/tutorial/node_modules/@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from 'node_modules/@fortawesome/react-fontawesome'
 import {
     faTwitter,
     faFacebookF,

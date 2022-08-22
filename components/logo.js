@@ -1,5 +1,5 @@
 import Link from 'next/Link'
-import styles from '/Users/takanoshoma/Desktop/tutorial/styles/logo.module.css'
+import styles from 'styles/logo.module.css'
 
 export default function Logo({ boxOn = false }) {
     return (

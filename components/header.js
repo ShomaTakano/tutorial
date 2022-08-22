@@ -1,7 +1,7 @@
-import Container from '/Users/takanoshoma/Desktop/tutorial/components/container'
-import Logo from '/Users/takanoshoma/Desktop/tutorial/components/logo'
-import Nav from '/Users/takanoshoma/Desktop/tutorial/components/nav'
-import styles from '/Users/takanoshoma/Desktop/tutorial/styles/header.module.css'
+import Container from 'components/container'
+import Logo from 'components/logo'
+import Nav from 'components/nav'
+import styles from 'styles/header.module.css'
 
 export default function Header() {
     return (
