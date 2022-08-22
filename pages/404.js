@@ -1,6 +1,6 @@
-import Meta from '/Users/takanoshoma/Desktop/tutorial/components/meta.js'
-import Container from '/Users/takanoshoma/Desktop/tutorial/components/container.js'
-import Hero from '/Users/takanoshoma/Desktop/tutorial/components/hero.js'
+import Meta from 'components/meta.js'
+import Container from 'components/container.js'
+import Hero from 'components/hero.js'
 
 export default function Custom404() {
     return (

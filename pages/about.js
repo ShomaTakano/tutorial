@@ -1,12 +1,12 @@
-import Meta from '/Users/takanoshoma/Desktop/tutorial/components/meta.js'
-import Container from '/Users/takanoshoma/Desktop/tutorial/components/container'
-import Hero from '/Users/takanoshoma/Desktop/tutorial/components/hero'
-import PostBody from '/Users/takanoshoma/Desktop/tutorial/components/post-body.js'
-import Contact from '/Users/takanoshoma/Desktop/tutorial/components/contact'
-import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from '/Users/takanoshoma/Desktop/tutorial/components/two-column.js'
-import Accordion from '/Users/takanoshoma/Desktop/tutorial/components/accordion.js'
+import Meta from 'components/meta.js'
+import Container from 'components/container'
+import Hero from 'components/hero'
+import PostBody from 'components/post-body.js'
+import Contact from 'components/contact'
+import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column.js'
+import Accordion from 'components/accordion.js'
 import Image from 'next/image'
-import eyecatch from '/Users/takanoshoma/Desktop/tutorial/images/about.jpg'
+import eyecatch from 'images/about.jpg'
 
 export default function About() {
   return (

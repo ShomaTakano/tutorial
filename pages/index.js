@@ -1,6 +1,6 @@
-import Meta from '/Users/takanoshoma/Desktop/tutorial/components/meta.js'
-import Container from '/Users/takanoshoma/Desktop/tutorial/components/container'
-import Hero from '/Users/takanoshoma/Desktop/tutorial/components/hero'
+import Meta from 'components/meta.js'
+import Container from 'components/container'
+import Hero from 'components/hero'
 
 export default function Home() {
       return (

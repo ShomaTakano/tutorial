@@ -1,13 +1,13 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import 'styles/globals.css'
-import Layout from '/Users/takanoshoma/Desktop/tutorial/components/layout.js'
+import Layout from 'components/layout.js'
 import Script from 'next/script'
-import * as gtag from '/Users/takanoshoma/Desktop/tutorial/lib/gtag.js'
+import * as gtag from 'lib/gtag.js'
 
 // Font Awesomeの設定
-import '/Users/takanoshoma/Desktop/tutorial/node_modules/@fortawesome/fontawesome-svg-core/styles.css'
-import { config } from '/Users/takanoshoma/Desktop/tutorial/node_modules/@fortawesome/fontawesome-svg-core'
+import 'node_modules/@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from 'node_modules/@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 
 
