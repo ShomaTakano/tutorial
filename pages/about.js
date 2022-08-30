@@ -85,5 +85,6 @@ export default function About() {
       </TwoColumn>
     </Container>
     
-    )
+  )
+  console.log(process.env.SERVICE_DOMAIN)
   }

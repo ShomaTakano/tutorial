@@ -5,10 +5,12 @@ import { faHouseChimney } from 'node_modules/@fortawesome/free-solid-svg-icons'
 
 export default function Icon() {
     return (
-        <h1　>
+        <h1>
             <FontAwesomeIcon icon={faHouseChimney}
                 style={{ fontSize: '100px', color: 'burlywood' }}
             /> Home
         </h1>
+        
     )
 }
+
