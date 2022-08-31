@@ -3,6 +3,9 @@
 import { FontAwesomeIcon } from 'node_modules/@fortawesome/react-fontawesome'
 import { faHouseChimney } from 'node_modules/@fortawesome/free-solid-svg-icons'
 
+const key = process.env.API_KEY
+
+
 export default function Icon() {
     return (
         <h1>
@@ -12,5 +15,6 @@ export default function Icon() {
         </h1>
         
     )
+    console.log(key)
 }
 
