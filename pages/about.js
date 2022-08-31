@@ -7,7 +7,6 @@ import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-colum
 import Accordion from 'components/accordion.js'
 import Image from 'next/image'
 import eyecatch from 'images/about.jpg'
-//確認よう
 
 export default function About() {
   return (
