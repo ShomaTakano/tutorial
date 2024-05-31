@@ -1,0 +1,12 @@
+overwrite: true
+schema: 'https://management.rakuweb.jp/gql'
+documents: 'src/**/*.graphql'
+generates:
+  src/types/gql-types.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'

@@ -1,0 +1,34 @@
+query getBlogById($id: ID!) {
+  article(id: $id) {
+    data {
+      id
+      attributes {
+        title
+        date
+        content
+        meta_description
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+        category {
+          data {
+            id
+            attributes {
+              name
+              en_name
+              url_name
+            }
+          }
+        }
+      }
+    }
+  }
+}

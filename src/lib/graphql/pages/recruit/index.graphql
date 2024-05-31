@@ -1,0 +1,22 @@
+query getRecruits {
+  recruits(sort: "date:desc", pagination: {limit:3}) {
+    data {
+      id
+      attributes {
+        title
+        date
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+query getNewsAll {
+  infos(sort: "date:desc") {
+    data {
+      id
+      attributes {
+        title
+        date
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+        news_category {
+          data {
+            id
+            attributes {
+              name
+              url_name
+            }
+          }
+        }
+      }
+    }
+  }
+}

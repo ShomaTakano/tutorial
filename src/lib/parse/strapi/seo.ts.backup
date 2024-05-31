@@ -1,0 +1,94 @@
+// import layer
+import { NextSeoProps } from 'next-seo';
+
+import {
+  CANONICAL_URL,
+  FACEBOOK_APP_ID,
+  STRAPI_HOST,
+} from 'constants/parameters';
+import {
+  defaultTitle,
+  defaultDescription,
+  defaultOgpImage,
+} from 'constants/seo';
+import { ComponentSharedSeo } from 'types/gql-types.d';
+
+export const parseCanonical = (route: string): string =>
+  `${CANONICAL_URL}${route}`;
+
+type ParseSeo = (data: ComponentSharedSeo & { route?: string }) => NextSeoProps;
+export const parseSeo: ParseSeo = ({
+  metaTitle,
+  metaDescription,
+  // metaSocial,
+  metaImage,
+  metaRobots,
+  canonicalURL,
+  route,
+}) => {
+  const [noIndex, noFollow] = metaRobots
+    ? parseMetaRobots(metaRobots)
+    : [false, false];
+
+  const res: NextSeoProps = {
+    title: metaTitle ?? defaultTitle,
+    description: metaDescription
+      ? removeBreakLine(metaDescription)
+      : defaultDescription,
+    openGraph: {
+      type: 'website',
+      title:
+        // metaSocial?.title ??
+        metaTitle ?? defaultTitle,
+      description:
+        // metaSocial?.description ??
+        metaDescription
+          ? removeBreakLine(metaDescription as string)
+          : defaultDescription,
+      images: [
+        {
+          url: metaImage?.data?.attributes?.url
+            ? `${STRAPI_HOST}${metaImage?.data?.attributes?.url}`
+            : defaultOgpImage,
+          width: metaImage?.data?.attributes?.width ?? 1200,
+          height: metaImage?.data?.attributes?.height ?? 630,
+          alt:
+            metaImage?.data?.attributes?.alternativeText ??
+            // metaSocial?.title ??
+            metaTitle ??
+            defaultTitle,
+        },
+      ],
+    },
+    twitter: { cardType: 'summary_large_image' },
+    facebook: { appId: FACEBOOK_APP_ID ?? '' },
+    noindex: noIndex,
+    nofollow: noFollow,
+  };
+  if (canonicalURL) {
+    res.canonical = canonicalURL;
+  } else if (route) {
+    res.canonical = parseCanonical(route);
+  } else {
+    res.canonical = CANONICAL_URL;
+  }
+
+  return res;
+};
+
+export const removeBreakLine = (str: string): string =>
+  str?.replace(/\r?\n/g, '');
+
+export const parseMetaRobots = (robots?: string) => {
+  if (!robots) {
+    const res = [false, false];
+    return res;
+  }
+  const list = robots;
+  // const list = robots.split(',');
+  const noIndex = list.includes('noindex');
+  const noFollow = list.includes('nofollow');
+  const res = [noIndex, noFollow];
+
+  return res;
+};

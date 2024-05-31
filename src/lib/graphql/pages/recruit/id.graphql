@@ -1,0 +1,46 @@
+query getRecruitAll {
+  recruits(sort: "date:desc") {
+    data {
+      id
+      attributes {
+        title
+        date
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query getRecruitById($id: ID!) {
+  recruit(id: $id) {
+    data {
+      id
+      attributes {
+        title
+        date
+        content
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+      }
+    }
+  }
+}

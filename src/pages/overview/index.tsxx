@@ -1,0 +1,9 @@
+import type { NextPage } from 'next';
+
+import { Overview as Template } from 'templates/Overview';
+
+const Overview: NextPage = () => {
+  return <Template />;
+};
+
+export default Overview;

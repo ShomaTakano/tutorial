@@ -1,0 +1,116 @@
+import type {
+  NextPage,
+  InferGetStaticPropsType,
+  GetStaticPaths,
+  GetStaticProps,
+} from 'next/types';
+import { useSetRecoilState } from 'recoil';
+import { useRouter } from 'next/router';
+
+// import { SeoComponent } from '~/components/SeoComponent';
+import { NewsId as Template } from 'templates/NewsId';
+import { initializeApollo } from 'lib/apollo/client';
+import { UPDATE_INTERVAL } from 'constants/parameters';
+import { articleState } from 'features/news/atoms';
+import {
+  GetNewsAllQuery,
+  GetNewsAllDocument,
+  GetNewsTargetQuery,
+  GetNewsTargetDocument,
+} from 'types/gql-types';
+import { parseArticle } from 'features/news/utils';
+import { id1 } from 'constants/news';
+//ビュー表示用に書きました
+const NewsId: NextPage = () => {
+  const setNewsState = useSetRecoilState(articleState);
+
+  setNewsState(id1);
+
+  return <Template />;
+};
+
+export default NewsId;
+
+// type Props = InferGetStaticPropsType<typeof getStaticProps>;
+
+// const NewsId: NextPage<Props> = ({ data }) => {
+//   const setArticle = useSetRecoilState(articleState);
+//   const router = useRouter();
+
+//   if (router.isFallback) {
+//     return <></>;
+//   }
+//   if (!data) {
+//     return <></>;
+//   }
+
+//   setArticle(() => {
+//     const result = parseArticle(data.article.data);
+
+//     return result;
+//   });
+
+//   return (
+//     <>
+//       {/*
+//       {seo ? <SeoComponent {...seo} /> : <SeoComponent />}
+//     */}
+//       <Template />
+//     </>
+//   );
+// };
+
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const apolloClient = initializeApollo();
+//   try {
+//     const { data } = await apolloClient.query<GetNewsAllQuery>({
+//       query: GetNewsAllDocument,
+//       // context: { headers: { Authorization: parseAuthorization(API_TOKEN) } },
+//     });
+
+//     const paths = data?.articles?.data
+//       ? data.articles.data.map((item) => ({
+//           params: {
+//             id: item?.id,
+//           },
+//         }))
+//       : [];
+
+//     return {
+//       paths,
+//       fallback: true,
+//     };
+//   } finally {
+//     console.log('get pages/news/[id] paths');
+//   }
+// };
+
+// export const getStaticProps: GetStaticProps<{
+//   data: GetNewsTargetQuery;
+// }> = async ({ params }) => {
+//   const { id } = params;
+//   const apolloClient = initializeApollo();
+//   const { data } = await apolloClient.query<GetNewsTargetQuery>({
+//     query: GetNewsTargetDocument,
+//     variables: { id },
+//     // context: { headers: { Authorization: parseAuthorization(API_TOKEN) } },
+//   });
+
+//   try {
+//     return {
+//       props: {
+//         data,
+//       },
+//       notFound: !data,
+//       revalidate: UPDATE_INTERVAL,
+//     };
+//   } catch (err) {
+//     console.error(err);
+
+//     return { props: { data: undefined }, notFound: true };
+//   } finally {
+//     console.log('get pages/news/[id] static props');
+//   }
+// };
+
+// export default NewsId;

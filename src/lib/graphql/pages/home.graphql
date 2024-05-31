@@ -1,0 +1,81 @@
+query getHomeContents {
+  infos(sort: "date:desc", pagination: { limit: 2 }) {
+    data {
+      id
+      attributes {
+        title
+        date
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+        news_category {
+          data {
+            id
+            attributes {
+              name
+              url_name
+            }
+          }
+        }
+      }
+    }
+  }
+  articles(sort: "date:desc", pagination: { limit: 3 }) {
+    data {
+      id
+      attributes {
+        title
+        date
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+        category {
+          data {
+            id
+            attributes {
+              name
+              en_name
+              url_name
+            }
+          }
+        }
+      }
+    }
+  }
+  recruits(sort: "date:desc", pagination: { limit: 3 }) {
+    data {
+      id
+      attributes {
+        title
+        date
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+      }
+    }
+  }
+}

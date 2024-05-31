@@ -1,0 +1,33 @@
+import type {
+  NextPage,
+  InferGetStaticPropsType,
+  GetStaticPaths,
+  GetStaticProps,
+} from 'next/types';
+import { useSetRecoilState } from 'recoil';
+import { useRouter } from 'next/router';
+
+// import { SeoComponent } from '~/components/SeoComponent';
+import { RecruitId as Template } from 'templates/RecruitId';
+import { initializeApollo } from 'lib/apollo/client';
+import { UPDATE_INTERVAL } from 'constants/parameters';
+import {
+  GetNewsAllQuery,
+  GetNewsAllDocument,
+  // GetNewsTargetQuery,
+  // GetNewsTargetDocument,
+} from 'types/gql-types';
+import { parseArticle } from 'features/news/utils';
+import { recruitState } from 'features/recruit/atoms';
+import {id1} from 'constants/recruit';
+
+//ビュー表示用に書きました
+const RecruitId: NextPage = () => {
+  const setRecruitState = useSetRecoilState(recruitState);
+
+  setRecruitState(id1);
+
+  return <Template />;
+};
+
+export default RecruitId;

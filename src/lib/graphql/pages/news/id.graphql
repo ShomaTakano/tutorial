@@ -1,0 +1,34 @@
+query getNewsById($id: ID!) {
+  info(id: $id) {
+    data {
+      id
+      attributes {
+        title
+        date
+        content
+        meta_description
+        image {
+          data {
+            attributes {
+              width
+              height
+              url
+              formats
+              alternativeText
+            }
+          }
+        }
+        link
+        news_category {
+          data {
+            id
+            attributes {
+              name
+              url_name
+            }
+          }
+        }
+      }
+    }
+  }
+}
