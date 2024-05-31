@@ -269,12 +269,14 @@ export const CardImg1 = style([
     top: `${-130 / 3.75}vw`,
     left: `${110 / 3.75}vw`,
     width: `${100 / 3.75}vw`,
+    height: `${120 / 3.75}vw`,
   },
   responsiveStyle({
     desktop1024: {
       top: `${-30 / 19.2}vw`,
       left: `${122 / 19.2}vw`,
       width: `${116 / 19.2}vw`,
+      height: `${145 / 19.2}vw`,
     },
     desktop1280: {},
     desktop1536: {},

@@ -34,6 +34,8 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/img-block-case-original-01.jpg.png"
+            width="518"
+            height="450"
           />
           <div className={TextArea}>
             <div className={title}>{`SNAP新潟公式サイト`}</div>
@@ -51,6 +53,8 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/img-block-case-original-01.jpg.png"
+            width="518"
+            height="450"
           />
           <div className={TextArea}>
             <div className={title}>{`SNAP新潟公式サイト`}</div>
@@ -68,6 +72,8 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/img-block-case-original-01.jpg.png"
+            width="518"
+            height="450"
           />
           <div className={TextArea}>
             <div className={title}>{`SNAP新潟公式サイト`}</div>
@@ -85,6 +91,8 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/img-block-case-original-01.jpg.png"
+            width="518"
+            height="450"
           />
           <div className={TextArea}>
             <div className={title}>{`SNAP新潟公式サイト`}</div>

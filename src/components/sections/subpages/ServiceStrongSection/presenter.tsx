@@ -33,6 +33,8 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/strong.png"
+            width="460"
+            height="400"
           />
           <div className={TextArea}>
             <div className={title}>
@@ -54,6 +56,8 @@ Easy to replace, hide, add and even reorder blocks.`}
             loading="lazy"
             alt=""
             src="/images/services/strong.png"
+            width="460"
+            height="400"
           />
           <div className={TextArea}>
             <div className={title}>
