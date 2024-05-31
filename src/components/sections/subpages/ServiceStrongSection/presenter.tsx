@@ -1,6 +1,7 @@
 // import layer
+import { Image } from '@chakra-ui/react';
 import { ServiceSectionTitle } from 'components/subpage/ServiceSectionTitle';
-import Image from 'next/image';
+
 import { FC } from 'react';
 
 import {
@@ -33,8 +34,6 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/strong.png"
-            width="460"
-            height="400"
           />
           <div className={TextArea}>
             <div className={title}>
@@ -56,8 +55,6 @@ Easy to replace, hide, add and even reorder blocks.`}
             loading="lazy"
             alt=""
             src="/images/services/strong.png"
-            width="460"
-            height="400"
           />
           <div className={TextArea}>
             <div className={title}>

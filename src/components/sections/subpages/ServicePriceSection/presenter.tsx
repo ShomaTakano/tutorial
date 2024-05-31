@@ -1,7 +1,8 @@
 // import layer
+import { Image } from '@chakra-ui/react';
 import { InternalLink } from 'components/links/InternalLink';
 import { ServiceSectionTitle } from 'components/subpage/ServiceSectionTitle';
-import Image from 'next/image';
+
 import { FC } from 'react';
 
 import {
@@ -49,8 +50,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -60,8 +59,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -71,8 +68,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -82,8 +77,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -114,8 +107,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -125,8 +116,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -136,8 +125,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -147,8 +134,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -179,8 +164,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -190,8 +173,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -201,8 +182,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>
@@ -212,8 +191,6 @@ export const Presenter: FC<PresenterProps> = () => {
               loading="lazy"
               alt=""
               src="/images/services/kkrn_icon_check_1.svg"
-              width="30"
-              height="30"
             />
             <div className={Text}>{`ダミーテキスト`}</div>
           </div>

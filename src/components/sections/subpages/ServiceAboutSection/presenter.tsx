@@ -1,5 +1,6 @@
 // import layer
-import Image from 'next/image';
+
+import { Image } from '@chakra-ui/react';
 import { FC } from 'react';
 
 import {
@@ -58,8 +59,6 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/3079_color.png"
-            width="116"
-            height="145"
           />
         </div>
         <div className={Card2}>
@@ -72,8 +71,6 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/9780_color.png"
-            width="162"
-            height="159"
           />
         </div>
         <div className={Card1}>
@@ -86,8 +83,6 @@ export const Presenter: FC<PresenterProps> = () => {
             loading="lazy"
             alt=""
             src="/images/services/8557_color.png"
-            width="101"
-            height="147"
           />
         </div>
       </div>
@@ -97,8 +92,6 @@ export const Presenter: FC<PresenterProps> = () => {
         loading="lazy"
         alt=""
         src="/images/services/Troubled.svg"
-        width="1500"
-        height="1000"
       />
     </>
   );
