@@ -1,20 +1,20 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/about": "pages/about.html",
   "/api/contact": "pages/api/contact.js",
+  "/_error": "pages/_error.js",
   "/api/ntu-contact": "pages/api/ntu-contact.js",
   "/contact": "pages/contact.html",
   "/privacy-policy": "pages/privacy-policy.html",
   "/services/web-system": "pages/services/web-system.html",
-  "/blog/[id]": "pages/blog/[id].js",
-  "/news/[id]": "pages/news/[id].js",
   "/blog": "pages/blog.js",
   "/": "pages/index.js",
-  "/news": "pages/news.js",
-  "/recruit": "pages/recruit.js",
+  "/news/[id]": "pages/news/[id].js",
+  "/thanks": "pages/thanks.html",
   "/recruit/[id]": "pages/recruit/[id].js",
-  "/thanks": "pages/thanks.html"
+  "/recruit": "pages/recruit.js",
+  "/news": "pages/news.js",
+  "/blog/[id]": "pages/blog/[id].js"
 }
